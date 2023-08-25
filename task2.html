@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>220101048-task2</title>
+    <style>
+        html
+{
+  box-sizing:border-box;
+}
+body
+{
+  background-color:white;
+  font-family:Segoe UI;
+}
+.outer{
+  width:1440px;
+  height:800px;
+}
+.upper{
+  left:0px;
+  width:1440px;
+  height:508px;
+  background-color:#656cec;
+  border-radius:64px;
+  colour:white;
+}
+.desktop{
+  width:1440px;
+  height:61px;
+  position:relative;
+  background-color:black;
+  font-size:14px;
+  opacity:1;
+  vertical-allign:bottom;
+}
+.leaderboard
+{
+  width:1440px;
+  height:100px;
+  left:0px;
+  top:0px;
+  font-size:64px;
+  font-style:regular;
+  vertical-allign:top;
+  border-bottom:3px solid white;
+  color:white;
+  text-align:center;
+  align:left;
+  font-weight:100;
+}
+.top3{
+   width:1440px;
+   height:347px;
+   border-bottom-right-radius:64px;
+   border-bottom-right-radius:64px;
+  padding-bottom:10px solid white;
+  margin-bottom:30px;
+}
+.up{
+  display:flex;
+  justify-content:center;
+  height:1px;
+}
+.up div{
+  background-color:#babeff;
+  text-align:center;
+}
+.number2{
+ width:26px;
+  height:25px;
+  border-radius:20px;
+  margin-top:50px;
+  margin-right:100px; 
+}
+.number1{
+  width:26px;
+  height:25px;
+  border-radius:20px;
+  margin-top:10px;
+  margin-right:130px;
+  margin-left:130px;
+}
+.number3{
+  width:26px;
+  height:25px;
+  border-radius:20px;
+  margin-top:50px;
+  margin-left:100px; 
+}
+.middle{
+    display:flex;
+  justify-content:center;
+}
+.middle div{
+  background-color:#babeff;
+  text-align:center;
+}
+.circle1{
+  height:165px;
+  width:165px;
+  border-radius:200px;
+  border:5px solid white;
+  margin-top:40px;
+  margin-left:100px;
+  margin-right:100px;
+  overflow:hidden;
+}
+.circle2{
+  height:120px;
+  width:120px;
+  border-radius:200px;
+  border:5px solid white;
+  margin-top:80px;
+  overflow:hidden;
+  
+}
+.circle3{
+  height:120px;
+  width:120px;
+  border-radius:70px;
+  border:5px solid white;
+  margin-top:80px;
+  overflow:hidden;
+  
+  
+  
+}
+.last{
+  display:flex;
+  justify-content:center;
+}
+.last div{
+  background-color:#babeff;
+  text-align:center;
+}
+.name2{
+  width:125px;
+  height:25px;
+  top:405px;
+  left:346px;
+  border-radius:20px;
+  margin-top:0px;
+  margin-right:30px;
+}
+.name1{
+  width:165px;
+  height:25px;
+  top:395px;
+  left:346px;
+  border-radius:20px;
+  margin-top:5px;
+  margin-right:80px;
+  margin-left:80px;
+}
+.name3{
+  width:130px;
+  height:25px;
+  top:355px;
+  left:346px;
+  border-radius:20px;
+  margin-top:5px;
+  margin-left:30px;
+}
+#x{
+  text-align:top;
+  margin-top:2px;
+  opacity:0.75;
+  color:white;
+}
+#b{
+  text-align:center;
+  margin-top:0px;
+  opacity:0.75;
+  color:white;
+}
+#y{
+  text-align:top;
+  margin-top:2px;
+  opacity:0.75;
+  color:white;
+}
+#m{
+  text-align:top;
+  margin-top:1px;
+  opacity:0.75;
+  color:white;
+}
+.down{
+  display:flex;
+  flex-direction:column;
+}
+.other{
+  width:1440px;
+  height:100px;
+  border:3px solid;
+  background-color:#d2d4f2;
+  border:3px solid white;
+  margin-top:2px;
+  text-align:center;
+}
+.column1{
+  text-align:center;
+  margin-right:1400px;
+  margin-top:60px;
+  height:-100px;
+  width:-5px;
+}
+.column2{
+  width:60px;
+  height:60px;
+  border-radius:50px;
+  margin-top:-80px;
+  margin-left:70px;
+  background-color:#656cec;
+  border:2px solid white;
+  overflow:hidden;
+  
+}
+#g{
+  text-align:top;
+  margin-top:6px;
+  opacity:0.75;
+}
+.column3{
+  text-align:center;
+  height:200px;
+  width:400px;
+  margin-top:-60px;
+}
+.column4{
+  text-align:center;
+  height:200px;
+  width:2000px;
+  margin-top:-220px;
+  margin-left:300px;
+}
+img
+{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="upper">
+          <div class="desktop">
+            <p>desktop-1</p>
+          </div>
+          <div class="leaderboard">
+            <p>LEADERBOARD</p>
+          </div>
+          <div class="top3">
+            <div class="up">
+              <div class="number2">
+                <p id="m">2</p>
+              </div>
+              <div class="number1">
+                <p id="y">1</p>
+              </div>
+              <div class="number3">
+                <p id="m">3</p>
+              </div>
+            </div>
+            <div class="middle">
+              <div class="circle2 h2 ">
+              </div>
+              <div class="circle1 h1">
+              </div>
+              <div class="circle3  h3">
+              </div>
+            </div>
+            <div class="last">
+              <div class="name2 re2">
+                <p id="x"></p>
+              </div>
+              <div class="name1 re1">
+                <p id="y"></p>
+              </div>
+              <div class="name3 re3">
+                <p id="b"></p>
+              </div>
+            </div>
+         <div class="down">
+        <div class="other" style="margin-top:30px">
+          <div class="column1"><p id="g">4</p></div>
+          <div class="column2  imgg1"></div>    
+          <div class="column3 joe"><p></p></div>    
+          <div class="column4  point1"><p></p></div>    
+        </div>
+         <div class="other">
+          <div class="column1 "><p id="g">5</p></div>
+          <div class="column2 imgg2"></div>    
+          <div class="column3 jenny"><p</p></div> 
+          <div class="column4 point2"><p></p></div>   
+        </div>
+         <div class="other">
+          <div class="column1"><p id="g">6</p></div>
+          <div class="column2 imgg3"></div>    
+          <div class="column3 josh"><p></p></div>   
+          <div class="column4 point3"><p></p></div>   
+        </div>
+         <div class="other">
+          <div class="column1"><p id="g">7</p></div>
+          <div class="column2 imgg4"></div>    
+          <div class="column3 stella"><p></p></div>    
+          <div class="column4 point4"><p></p></div> 
+        </div>
+         <div class="other">
+          <div class="column1"><p id="g">8</p></div>
+          <div class="column2 imgg5"></div>    
+          <div class="column3 sally"><p></p></div> 
+          <div class="column4 point5"><p></p></div>   
+        </div>
+           <div class="other">
+          <div class="column1"><p id="g">8</p></div>
+          <div class="column2 imgg6"></div>    
+          <div class="column3 salah"><p></p></div> 
+          <div class="column4 point6"><p></p></div>   
+        </div>
+           </div>
+
+           <script>
+            let name='';
+        fetch('https://www.coursehubiitg.in/api/codingweek/contributions')
+            .then(num => num.json())
+            .then(name1 => {
+                function sorting(n1,n2) {
+                    return n2.points - n1.points;
+                }
+                name = name1.sort(sorting)
+                console.log(name)
+          
+           document.querySelector('.re1').innerText = `${name[0].name} - ${name[0].points}`;
+                document.querySelector('.re2').innerText = `${name[1].name} - ${name[1].points}`;                
+                document.querySelector('.re3').innerText = `${name[2].name} - ${name[2].points}`;                
+                document.querySelector('.h1').innerHTML = `<img src="${name[0].avatar}">`;  
+                document.querySelector('.h2').innerHTML = `<img src="${name[1].avatar}">`;                
+                document.querySelector('.h3').innerHTML = `<img src="${name[2].avatar}">`;
+          
+           document.querySelector('.joe').innerText = `${name[3].name}`; 
+                document.querySelector('.point1').innerText = `${name[3].points}`;
+                document.querySelector('.imgg1').innerHTML = `<img src="${name[3].avatar}">`;
+                document.querySelector('.jenny').innerText = `${name[4].name}`; 
+                document.querySelector('.point2').innerText = `${name[4].points}`;
+                document.querySelector('.imgg2').innerHTML = `<img src="${name[4].avatar}">`;  
+
+                document.querySelector('.josh').innerText = `${name[5].name}`; 
+                document.querySelector('.point3').innerText = `${name[5].points}`;
+                document.querySelector('.imgg3').innerHTML = `<img src="${name[5].avatar}">`;  
+
+                document.querySelector('.stella').innerText = `${name[6].name}`; 
+                document.querySelector('.point4').innerText = `${name[6].points}`;
+                document.querySelector('.imgg4').innerHTML = `<img src="${name[6].avatar}">`;  
+
+                document.querySelector('.sally').innerText = `${name[7].name}`; 
+                document.querySelector('.point5').innerText = `${name[7].points}`;
+                document.querySelector('.imgg5').innerHTML = `<img src="${name[7].avatar}">`;  
+
+                document.querySelector('.salah').innerText = `${name[8].name}`; 
+                document.querySelector('.point6').innerText = `${name[8].points}`;
+                document.querySelector('.imgg6').innerHTML = `<img src="${name[8].avatar}">`;
+            })
+           </script>
+          
+</body>
+</html>
